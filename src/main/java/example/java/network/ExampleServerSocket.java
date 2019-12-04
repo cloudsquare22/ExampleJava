@@ -7,7 +7,7 @@ package example.java.network;
 
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class ExampleServerSocket {
     public static void main(String[] args) {
