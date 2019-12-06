@@ -12,7 +12,10 @@ public class ExampleClientSocket {
     public static void main(String[] args) {
         try(Socket socket = new Socket("localhost", 7777);
             PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);) {
-            printWriter.println("Example Send Data");
+            for(int i = 0; i < 5; i++) {
+                printWriter.println("Example Send Data");
+                Thread.sleep(5000);
+            }
         }
         catch(Exception e) {
             System.out.println(e);
