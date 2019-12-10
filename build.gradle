@@ -10,5 +10,6 @@ repositories {
 }
 
 dependencies {
+    compile 'org.openhab.jmdns:jmdns:3.4.2'
     testCompile 'junit:junit:4.12'
 }
